@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/index.css">
+   <script src="js/fontawasome.js" crossorigin="anonymous" ></script>
+   <title>Language translator app</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="wrapper">
+         <div class="input_field">
+            <textarea class="from-text" placeholder="Enter your text"></textarea>
+            <textarea class="to-text" readonly disabled placeholder="Translation"></textarea>
+         </div>
+         <ul class="controls">
+            <li class="row from">
+               <div class="icons"> 
+ 
+                  <!-- copy icon -->
+                  <i class="fa-solid fa-copy" id="fromCopy"></i>
+               </div>
+               <select></select>
+            </li>
+            <li class="row to">
+               
+         <select></select>
+             <div class="icons">
+           <i class="fa-solid fa-copy" id="toCopy"></i>
+
+               </div>
+            </li>
+         </ul>
+      </div>
+      <button id="sendBtn" type="submit">Translate</button>
+   </div>
+    
+   <script src="js/data.js"></script>
+   <script src="js/index.js"></script>
+</body>
+
+</html>

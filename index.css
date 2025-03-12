@@ -1,0 +1,131 @@
+*,*::before,*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: linear-gradient(130deg, #153677, #4e085f);
+}
+
+.container {
+   width: 99%;
+   max-width: 560px;
+   background: #ffffff;
+   padding: 30px;
+   border-radius: 8px;
+}
+
+.wrapper {
+   border: 1px solid #bbb;
+   border-radius: 7px;
+}
+
+.input_field {
+   display: flex;
+   border-bottom: 1px solid #bbb;
+   
+}
+
+
+.input_field textarea {
+   height: 230px;
+   width: 100%;
+   border: none;
+   outline: none;
+   resize: none;
+   background: transparent;
+   font-size: 18px;
+   padding: 10px 15px;
+   border-radius: 5px;
+}
+
+.input_field .to-text {
+   border-left: 1px solid #bbb;
+   border-radius: 0px;
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+.controls {
+   list-style: none;
+   padding: 12px 15px;
+}
+
+.controls .icons i {
+   font-size: 14px;
+   width: 50px;
+   color: #989898;
+   justify-content: center;
+}
+
+.row select {
+   border: none;
+   outline: none;
+   background: transparent;
+}
+
+.controls .icons {
+   width: 38%;
+}
+
+.row.from .icons {
+   border-right: 1px solid #bbb;
+   padding-right: 15px;
+}
+
+.row.to .icons {
+   border-left: 1px solid #bbb;
+   padding-left: 10px;
+}
+
+.container #sendBtn {
+   width: 100%;
+   padding: 14px;
+   border: none;
+   outline: none;
+   margin-top: 20px;
+   border-radius: 5px;
+   background: linear-gradient(130deg, #153677, #4e085f);
+   font-size: 16px;
+   color: #fff;
+}
+
+.controls .icons i{
+   color: #939393;
+   font-size: 15px;
+}
+
+
+@media screen and (max-width:600px) {
+   .container {
+      width: 95%;
+      padding: 20px;
+   }
+   
+   .input_field {
+      flex-wrap: wrap;
+   }
+   
+   .input_field .to-text {
+      border-left: none;
+      border-top: 1px solid #bbb;
+      
+   }
+   
+   .input_field textarea {
+      font-size: 16px;
+   }
+}
